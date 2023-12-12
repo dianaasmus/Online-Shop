@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/navbar';
+import Product from './components/product';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+const App = () => (
+    <div>
+        <Navbar />
+        <div className='products-container'>
+            <Product title="Cherries" image="cherries.jpg" description="Add cherries to your basket" />
+            <Product title="Apples" image="apples.jpg" description="Add apples to your basket" />
+            <Product title="Grapes" image="grapes.jpg" description="Add grapes to your basket" />
+            <Product title="Pineapples" image="pineapple.jpg" description="Add pineapples to your basket" />
+        </div>
     </div>
-  );
-}
+)
 
 export default App;
