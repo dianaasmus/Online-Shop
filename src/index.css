@@ -1,3 +1,16 @@
+.content-container {
+    width: 75vw;
+}
+
+.basket {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 25vw;
+    background-color: gainsboro;
+}
+
 .products-container {
     display: flex;
     justify-content: space-between;
